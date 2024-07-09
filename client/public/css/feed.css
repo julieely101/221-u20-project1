@@ -49,6 +49,7 @@ a {
 }
 
 #newsfeed {
+	text-align: left;
 	max-width: 600px;
 	min-width: 600px;
 }

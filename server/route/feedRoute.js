@@ -14,6 +14,7 @@ router.route('/:feedItemId')
     .delete(feedController.deletefeedItem)
     .post(feedController.updatefeedItem)  
     .patch(feedController.replacefeedItem)
+    .put(feedController.insertfeedItem)
 
 module.exports = router;
 

@@ -39,6 +39,16 @@ exports.deletefeedItem = function(req, res) {
     res.send(currentStories);
 };
 
+exports.insertfeedItem = function(req,res){
+	let updatedfeedItem = currentStories[req.params.feedItemId];
+	console.log(req.body.title);
+	currentStories[req.params.feedItemId] = updatedfeedItem;
+	res.setHeader('Content-Type','application/json');
+	res.send(currentStories[req.params.feedItemId]);
+
+}
+
+
 //function to replace a feed item
 exports.replacefeedItem = function(req, res) {
 	var updatedfeedItem = currentStories[req.params.feedItemId];
@@ -77,4 +87,6 @@ exports.updatefeedItem = function(req, res) {
 	res.setHeader('Content-Type', 'application/json');
 	res.send(currentStories[req.params.feedItemId]);
 }
+
+
 

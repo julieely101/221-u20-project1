@@ -1,21 +1,4 @@
-//let pic = {name: 'campus', image: '/images/campus.png'};
-//let pic2 = {name: 'hancock', image: '/images/hancock.jpeg'};
 
-//let feed = [];
-//feed.push(pic);
-//feed.push(pic2);
-
-//window.onload = () => {
-    //console.log(feed);
-
-    //let feedHtml = document.getElementById('feed');
-
-    //for(let i=0; i<feed.length; i++); {
-        //console.log(feed[i].image)
-        //feedHtml.innerHTML += feed[i].name;
-        //feedHtml = feedHtml + feedHtml[i].name;
-    //}
-//}
 
 function goToMaristPortal() {
     goToLocation('http://my.marist.edu');
